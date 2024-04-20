@@ -9,19 +9,34 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:padding="16dp"
+        android:background="@drawable/expensebg">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_margin="16dp"
-                android:src="@drawable/icon200" />
-        </RelativeLayout>
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_marginStart="16dp"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:layout_marginEnd="16dp"-->
+<!--                android:layout_marginBottom="16dp"-->
+<!--                android:src="@drawable/icon200" />-->
+<!--        </RelativeLayout>-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spend Wise"
+            android:textColor="#FFF"
+            android:textSize="40sp"
+            android:textStyle="bold|italic"
+            android:layout_margin="20dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -82,9 +97,12 @@
                     android:background="@color/colorPrimary"
                     android:onClick="onCreateClick"
                     android:padding="8dp"
+                    android:backgroundTint="#3D5AFE"
                     android:text="@string/btn_cerate_account"
                     android:textAllCaps="false"
-                    android:textColor="@color/black" />
+                    android:textColor="#FFF"
+                    android:textSize="20sp"
+                    style="@style/TextAppearance.MaterialComponents.Button"/>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
