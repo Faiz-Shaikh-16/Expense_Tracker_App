@@ -556,6 +556,8 @@ public class HomeActivity extends BaseActivity implements NavigationView.OnNavig
             } else if (itemId == R.id.action_details) {
                 startActivity(new Intent(this, DetailFragmentActivity.class));
                 return true;
+            } else if (itemId == R.id.action_logout) {
+                startActivity(new Intent(this, AddEditAccount.class));
             }
             ((DrawerLayout) findViewById(R.id.drawer_layout)).closeDrawer(GravityCompat.START);
             return true;
